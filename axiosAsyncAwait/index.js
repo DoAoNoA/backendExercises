@@ -1,7 +1,6 @@
 const axios = require('axios');
 var mongojs = require('mongojs');
 var db = mongojs('mydb', ['cities']);
-var db = mongojs('mydb', ['mycollection'])
 
 db.cities.find(function (err, docs) {
 
